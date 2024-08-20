@@ -1,4 +1,5 @@
 ﻿using EmployeeAdminPortal.Data;
+using EmployeeAdminPortal.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,9 +30,13 @@ namespace EmployeeAdminPortal.Controllers
 
         [HttpPost]
 
-        public IActionResult AddEmployee()
+        public IActionResult AddEmployee(AddEmployeeDto addEmployeeDto)
         {
-
+            var employeeEntity = new EmployeeAdminPortal()
+            {
+                 Name {}                                                                       
+            }
+            dbcontext.Employees.Add()
         }
 
 
